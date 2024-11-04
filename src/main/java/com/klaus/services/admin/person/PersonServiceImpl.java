@@ -63,7 +63,7 @@ public class PersonServiceImpl implements PersonService {
         existedPerson.setLastName(personDto.getLastName());
         existedPerson.setIdentification(personDto.getIdentification());
         existedPerson.setDateOfBirth(personDto.getDateOfBirth());
-        existedPerson.setStatus(personDto.getStatus());
+        existedPerson.setStatus(Boolean.TRUE);
         personRepository.save(existedPerson);
         return existedPerson;
    }
